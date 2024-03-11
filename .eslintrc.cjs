@@ -1,4 +1,5 @@
 module.exports = {
+  // ESLint configuration for React unit tests
   root: true,
   env: { browser: true, es2020: true },
   extends: [
@@ -14,6 +15,7 @@ module.exports = {
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
   rules: {
+    // Custom ESLint rules for React unit tests
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",
