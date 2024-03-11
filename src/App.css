@@ -1,0 +1,104 @@
+#root {
+  padding: 0;
+  margin: 0;
+}
+.title {
+  max-lines: 1;
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.heading {
+  display: flex;
+  gap: 0.5rem;
+  background-color: rgb(6, 132, 249);
+  color: rgb(255, 255, 255);
+  margin: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 2rem;
+  box-shadow: rgb(206, 206, 206) 0.5rem 0.5rem 0.9rem;
+  transition-duration: 1s;
+}
+.heading:hover {
+  background-color: rgb(37, 102, 255);
+  cursor: pointer;
+}
+
+.todo-input-container {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+.todo-input {
+  flex: 1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.todo-input-button {
+  border-radius: 0.5rem;
+}
+
+.todo-container {
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.incomplete {
+  background-color: rgb(216, 253, 222);
+}
+.completed {
+  background-color: rgb(255, 220, 220);
+}
+
+.todo-list-item {
+  list-style-type: none;
+  display: flex;
+}
+
+.todo-item {
+  display: flex;
+  flex: 1;
+  border-radius: 0.5rem;
+  padding: 0rem 0.3rem 0rem 0.5rem;
+  transition-duration: 400ms;
+}
+
+.todo-item:hover {
+  background-color: rgba(65, 119, 255, 0.237);
+  cursor: pointer;
+}
+
+.todo-item-text {
+  display: flex;
+  flex: 1;
+}
+.cross-text {
+  text-decoration: line-through;
+}
+
+.todo-item-button {
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  align-self: center;
+}
+.todo-item-button:hover {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+.text-red {
+  color: red;
+}
