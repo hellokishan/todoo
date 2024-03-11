@@ -26,7 +26,7 @@ const CompletedTodo = () => {
                 className="todo-item-button"
                 onClick={() => removeTodo(item?.id)}
               >
-                <GoTrash style={{ fontSize: 20 }} />
+                <GoTrash style={{ fontSize: 20 }} data-testid="delete-icon"  />
               </div>
             </div>
           </li>
