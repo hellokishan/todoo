@@ -4,3 +4,5 @@
       ["@babel/preset-react", { "runtime": "automatic" }]
     ]
   }
+
+// describing the purpose of the preset array
