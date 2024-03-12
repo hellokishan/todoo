@@ -36,4 +36,15 @@ describe("renders the whole Todoo App", () => {
     fireEvent.click(todobutton)
     expect(getByPlaceholderText("Add new")).toBeInTheDocument();
   })
+
+  test("should show window alert when add button is clicked with empty field", () => {
+    const alertMock = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    const{getByPlaceholderText,getByText}=render(<App/>);
+    const inputField =getByPlaceholderText('Add new');
+    const addButton = getByText('Add');
+    fireEvent.change(inputField, { target: { value: '' } });
+    fireEvent.click(addButton);
+    expect(alertMock).toHaveBeenCalledWith('someting went wrong');
+    alertMock.mockRestore();
+  });
 });

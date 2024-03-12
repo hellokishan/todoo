@@ -1,11 +1,5 @@
 import { fireEvent,render,screen } from "@testing-library/react";
 import Todo from "../screens/Todo";
-// import useTodoStore from '../utils/store';
-
-// jest.mock('../utils/store', () => ({
-//   __esModule: true,
-//   default: jest.fn(),
-// }));
 
 describe("renders the Todoo screen", () => {
   test("should render the Addnew input Field and Add button", () => {
@@ -62,16 +56,5 @@ test('should render multiple items in the incomplete list', () => {
     expect(divElements.length).toBe(4)
 });
 
-// test('Renders incomplete todos correctly', () => {
-//   const incompleteTodos = [
-//     { id: '1', title: 'Incomplete Todo 1', checked: false },
-//     { id: '2', title: 'Incomplete Todo 2', checked: false },
-//   ];
-//   useTodoStore.mockReturnValue({ incompleteTodos, toggleTodo: jest.fn() });
-
-//   const { getByText } = render(<Todo />);
-//   expect(getByText('Incomplete Todo 1')).toBeInTheDocument();
-//   expect(getByText('Incomplete Todo 2')).toBeInTheDocument();
-// });
 });
 
