@@ -25,7 +25,8 @@ const Posts = () => {
       <div className="todo-container" style={{ height: "100vh" }}>
         <h4>Showing Posts</h4>
         {posts.map((item) => (
-          <div key={item?.id}>
+          <div key={item?.id}
+          data-testid={`item-${item?.id}`}>
             <p>{item?.title}</p>
           </div>
         ))}
