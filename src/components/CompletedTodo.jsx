@@ -19,7 +19,9 @@ const CompletedTodo = () => {
                 {item.title}
               </p>
               <div className="todo-item-button">
-                <GoCheckCircle style={{ fontSize: 20 }} />
+                <GoCheckCircle style={{ fontSize: 20 }} 
+                 data-testid="deleteIcon"/>
+               
               </div>
 
               <div
